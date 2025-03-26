@@ -1,0 +1,15 @@
+{
+  "name": "randomapi",
+  "version": "1.0.0",
+  "description": "Test API en vanilla ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "randomAPI"
+  },
+  "author": "sarah iglla",
+  "license": "ISC"
+}
