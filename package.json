@@ -11,5 +11,9 @@
     "url": "randomAPI"
   },
   "author": "sarah iglla",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3"
+  }
 }

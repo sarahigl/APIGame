@@ -1,8 +1,1 @@
-[
-    {
-      "id": 1,
-      "name": "sarah",
-      "phone": "017000000",
-      "email": "sarah@gmail.com"
-    }
-  ]
+[{"id":1,"name":"sarah","phone":"017000000","email":"sarah@gmail.com"},{"name":"Co","phone":"3452347","email":"coo@gmail.com","id":2},{"name":"Brenda","phone":"34544547","email":"brenda@gmail.com","id":3}]

@@ -10,7 +10,7 @@ const routes = {
             response(res,"Welcome to the API");
         },
     },
-    "/usersTest":{
+    "/utilisateurs":{
         GET: userController.getUsers,
         POST: (req, res)=>{//fonction anonyme qui appelle validateUserData et si les données sont valides, appelle createUser
             validateUserData(req, res, () => {

@@ -5,7 +5,7 @@ const filePath = require("../utils/filePath");//chemin du fichier JSON
 
 //fonction asynchrone qui écrit les données dans le fichier  JSON
 //elle renvoie une promesse qui se résout lorsque l'écriture est terminée
-const WriteDataAsync = async (users) => {
+const writeDataAsync = async (users) => {
     try{
         await fs.writeFile(filePath, JSON.stringify(users));//ecrit ces données dans le fichier definie par filePath
         console.log("Données sauvegardées avec succès");
@@ -26,4 +26,4 @@ const readDataAsync = async () => {
     const data = JSON.parse(rawJson) || [];//convertit les données JSON en objet JavaScript
     return data;
 };
-module.exports = { WriteDataAsync, readDataAsync };
+module.exports = { writeDataAsync, readDataAsync };

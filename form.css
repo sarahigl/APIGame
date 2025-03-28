@@ -1,0 +1,86 @@
+body{
+    background-color: #f0f0f0;
+    
+}
+.rubik-glitch-regular {
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 300;
+    font-style: normal;
+  }
+.lexend-exa-regular {
+    font-family: "Lexend Exa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+  
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    background-color: #fad8f4;
+    border:#f7c0ed 3px solid;
+    border-radius: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.titre{
+    font-size: 40px;
+    font-family: "Rubik Glitch", system-ui;
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-shadow: 0 0 5px #f7c0ed, 0 0 10px #f7c0ed, 0 0 15px #f7c0ed, 0 0 20px #f7c0ed, 0 0 25px #f7c0ed, 0 0 30px #f7c0ed, 0 0 35px #f7c0ed;
+}
+input{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 3px solid #d7ebf6;
+    padding: 10px;
+    margin: 20px;
+    align-self: center;
+}
+label{
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Lexend Exa", sans-serif;
+    margin-left: 20px;
+    color: #000;
+}
+#phone{
+    margin-bottom: 60px;
+}
+
+.floating-image  img {
+    position: absolute;
+    animation: float 6s infinite ease-in-out alternate;
+    top: 0;
+    left: 0;
+    width: 100px; /* Taille de l'image */
+    max-width: 100px; /* Taille max */
+    max-height: 100px; /* Taille max */
+    z-index: -1; /* Pour que l'image soit derrière le texte */
+    height: auto;
+    opacity: 0.5; /* Opacité de l'image */
+    filter: blur(2px); /* Flou de l'image */
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(20px);
+    }
+  }
