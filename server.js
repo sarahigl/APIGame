@@ -4,7 +4,7 @@ const url = require("url");//permet de parser les urls
 
 //importation des modules personnalisés(routes et middlewares)
 const routes = require("./routes");//tout les endpoints de l'application
-const { loggerMiddleware } = require("./middleware/logger");//middleware de logging des requêtes
+const { loggerMiddleware } = require("./middlewares");//middleware de logging des requêtes
 
 
 //Définition du port sur lequel le serveur écoute
@@ -80,8 +80,9 @@ const server = http.createServer((req, res) => { //logique de requete et de rép
 //ajout du middleware de logging a la liste des listeners de l'event request
 server.on("request", loggerMiddleware);
 //démarrage du serveur sur le port spécifié
-server.listen(PORT,()=> console.log('Server listening on port: ${PORT}'));
-
+server.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
 
 
 
