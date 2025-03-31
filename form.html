@@ -7,15 +7,28 @@
     <title>Formulaire</title>
 </head>
 <body>
+    <h1>Centralisez et gérez votre collection de jeux en cours :</h1>
     <section class="formulaire" id="formulaire">
-        <h1 class="titre">Who are you ?</h1>
-        <label for="name">Nickname :</label>
+        <h1 class="titre">Nouveau jeu :</h1>
+        <label for="name">Nom du jeu:</label>
         <input type="text" id="name" placeholder="Nom" required>
-        <label for="email">Email :</label>
-        <input type="email" id="email" placeholder="Email" required>
-        <label for="phone">Number :</label>
-        <input type="phone" id="phone" placeholder="Phone" required>
-        <input type="submit" value="Envoyer" class="submit">
+        <label for="platform">Plateforme:</label>
+        <input type="text" id="platform" placeholder="Plateforme" required>
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" placeholder="Genre" required>
+        <label for="statut"> Statut d'avancement :</label>
+        <select id="statut" required>
+            <option value="" disabled selected>Statut</option>
+            <option value="Non commence">Non commencé</option>
+            <option value="En cours">En cours</option>
+            <option value="Terminé">Terminé</option>
+            <option value="Abandonné">Abandonné</option>
+        </select>
+        <label for="note">Note:</label>
+        <input type="number" id="note" min="0" max="20" placeholder="Note sur 20" required>
+        <label for="commentaire">Commentaire:</label>
+        <textarea id="commentaire" rows="4" placeholder="Commentaire"></textarea>
+        <input type="submit" value="Ajouter" class="submit">
     </section>
     <div id="floating-container">
         <div class="floating-image" style="top: 10%; left: 5%;">

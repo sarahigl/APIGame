@@ -1,5 +1,6 @@
 body{
     background-color: #f0f0f0;
+    font-size: clamp(16px, 2vw, 24px);
     
 }
 .rubik-glitch-regular {
@@ -18,21 +19,21 @@ body{
 .formulaire{
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 5%;
     background-color: #fad8f4;
     border:#f7c0ed 3px solid;
     border-radius: 20px;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 700px;
-    width: 700px;
+    height: auto;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     
 }
 .titre{
-    font-size: 40px;
+
     font-family: "Rubik Glitch", system-ui;
     font-weight: 300;
     color: #000;
@@ -42,7 +43,7 @@ body{
     text-shadow: 0 0 5px #f7c0ed, 0 0 10px #f7c0ed, 0 0 15px #f7c0ed, 0 0 20px #f7c0ed, 0 0 25px #f7c0ed, 0 0 30px #f7c0ed, 0 0 35px #f7c0ed;
 }
 input{
-    width: 300px;
+    width: 80%;
     height: 50px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -53,7 +54,7 @@ input{
 }
 label{
     margin-top: 15px;
-    font-size: 20px;
+    
     font-family: "Lexend Exa", sans-serif;
     margin-left: 20px;
     color: #000;
@@ -67,11 +68,10 @@ label{
     animation: float 6s infinite ease-in-out alternate;
     top: 0;
     left: 0;
-    width: 100px; /* Taille de l'image */
-    max-width: 100px; /* Taille max */
-    max-height: 100px; /* Taille max */
+    /* Taille max */
     z-index: -1; /* Pour que l'image soit derrière le texte */
-    height: auto;
+    width: 100%; /* Largeur de l'image */
+    height: 100%; /* Hauteur de l'image */
     opacity: 0.5; /* Opacité de l'image */
     filter: blur(2px); /* Flou de l'image */
   }
